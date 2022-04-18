@@ -35,15 +35,15 @@ try :
         AT.append([0]*N)
     for i in range(N):      # заполняем матрицу А
         for j in range(N):
-            ###A[i][j] = np.random.randint(0,10)
-            if i<j and j < N-1-i:
+            A[i][j] = np.random.randint(-10,10)
+            """if i<j and j < N-1-i:
                 A[i][j] = 1
             elif i<j and j > N-1-i:
                 A[i][j] = 2
             elif i>j and j > N-1-i:
                 A[i][j] = 3
             elif i>j and j < N-1-i:
-                A[i][j] = 4
+                A[i][j] = 4"""
 
     time_next = time.time()
     print_matrix(F,"F",time_next-start)
